@@ -24,15 +24,22 @@
             font-size: 18px;
             font-weight: 400;
 
+            @include media-breakpoint-down(lg) {
+                font-size: 15px;
+            }
+
             a {
                 padding: 0 6px;
                 text-decoration: none;
                 color: $black;
                 font-weight: 600; 
+                @include media-breakpoint-down(lg) {
+                    padding: 0;
+                }
 
                 &:hover {
                     color: $primary;
-                    transition: all .5s;
+                    transition: all .5s ease-in-out;
                 }
             }
         }
@@ -62,6 +69,7 @@
         }
 
         h2 {
+            text-transform: capitalize;
             font-weight: 600;
             margin-bottom: .25rem;
         }
