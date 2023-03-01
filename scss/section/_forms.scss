@@ -1,0 +1,105 @@
+@use '../custom' as *;
+
+
+.hero {
+    position: relative;
+    font-family: "Poppins", "san-serif";
+    .navbar {
+        margin-bottom: 1rem;
+
+        &-brand {
+            text-decoration: none;
+
+            span {
+                padding: 0 16px;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            img {
+                width: 3rem;
+            }
+        }
+
+        &-nav {
+            font-size: 18px;
+            font-weight: 400;
+
+            a {
+                padding: 0 6px;
+                text-decoration: none;
+                color: $black;
+                font-weight: 600; 
+
+                &:hover {
+                    color: $primary;
+                    transition: all .5s;
+                }
+            }
+        }
+    }
+
+    &-body {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding: 1rem;
+
+        .img-box {
+            display: block;
+            margin-bottom: .15rem;
+
+            img {
+                width: 14rem;
+                margin: auto;
+
+                &:hover {
+                    transform: scale(1.05);
+                    transition: all 1s;
+                }
+            }
+        }
+
+        h2 {
+            font-weight: 600;
+            margin-bottom: .25rem;
+        }
+
+        .hero-detail {
+            width: 16%;
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: .75rem;
+            text-align: center;
+
+            @include media-breakpoint-down(lg) {
+                width: 45%;
+            }
+        }
+
+        .form-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 25%;
+            @include media-breakpoint-down(lg) {
+                width: 70%;
+            }
+
+            .form-control {
+                border: none;
+                border-bottom: 2px solid $gray-500;
+                margin-top: .25rem;
+                margin-bottom: 2rem;
+
+                &:hover {
+                    border-bottom: 2px solid $primary;
+                }
+            }
+
+        }
+
+    }
+}

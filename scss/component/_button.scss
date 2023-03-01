@@ -1,0 +1,23 @@
+@use '../custom'  as *;
+
+.form-btn {
+    margin: 5px;
+    background-color: $primary;
+    // background-color: linear-gradient(0deg, #61876E, #61876E);
+    border: 3px solid $primary;
+    color: $white;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: lowercase;
+    padding: 5px 2rem;
+    border-radius: 3rem;
+
+    &:hover {
+        color: $primary;
+        background-color: transparent;
+        border: 3px solid $primary;
+        transition: all .5s;
+
+    }
+;
+}
