@@ -91,6 +91,7 @@
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+            margin-top: 1rem;
             width: 25%;
             @include media-breakpoint-down(lg) {
                 width: 70%;
@@ -103,7 +104,7 @@
                 margin-bottom: 2rem;
 
                 &.top {
-                    margin-bottom: 2.5rem !important;
+                    margin-bottom: 2.15rem !important;
                 }
 
                 &:hover {
