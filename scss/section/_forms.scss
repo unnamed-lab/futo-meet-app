@@ -102,6 +102,10 @@
                 margin-top: .25rem;
                 margin-bottom: 2rem;
 
+                &.top {
+                    margin-bottom: 2.5rem !important;
+                }
+
                 &:hover {
                     border-bottom: 2px solid $primary;
                 }
