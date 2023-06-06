@@ -3,14 +3,24 @@
 .form-btn {
     margin: 5px;
     background-color: $primary;
-    // background-color: linear-gradient(0deg, #61876E, #61876E);
     border: 3px solid $primary;
     color: $white;
     font-size: 16px;
     font-weight: 500;
-    text-transform: lowercase;
-    padding: 5px 2rem;
+    text-transform:none;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 2rem;
     border-radius: 3rem;
+
+    &.btn-50 {
+        width: 60% !important;
+        margin: .5rem auto !important;
+
+        @include media-breakpoint-down(lg) {
+            width: 80% !important;
+      }
+    }
 
     &:hover {
         color: $primary;
@@ -19,5 +29,72 @@
         transition: all .5s;
 
     }
+
+    &.dark {
+        background-color: $dark !important;
+        border: 3px solid $dark !important;
+
+        &:hover {
+        color: $dark;
+        background-color: transparent !important;
+        border: 3px solid $dark;
+        transition: all 1s;
+
+    }
+    }
 ;
+}
+
+.fm-btn {
+    margin: 5px;
+    background-color: $primary;
+    border: 3px solid $primary;
+    color: $white !important;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform:none;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1rem;
+    padding: 6px 2rem !important;
+    
+    &.rounded {
+        border-radius: 3rem;
+    }
+
+    &:hover {
+        color: $primary !important;
+        background-color: $white;
+        border: 3px solid $white;
+        transition: all .5s;
+    }
+
+    &.light {
+        background-color: $white !important;
+        border: 3px solid transparent !important;
+        color: $dark !important;
+        box-shadow: 2px 1px 4px 0px $gray-500 !important;
+
+        &:hover {
+        color: $white!important;
+        background-color: $primary !important;
+        border: 3px solid $primary !important;
+        transition: all .5s;
+        box-shadow: none !important;
+    }
+    }
+
+    &.dark {
+        background-color: $dark !important;
+        border: 3px solid $dark !important;
+        color: $white !important;
+
+        &:hover {
+        color: $dark !important;
+        background-color: $white !important;
+        border: 3px solid $white !important;
+        transition: all .5s;
+        box-shadow: none !important;
+    }
+    }
 }

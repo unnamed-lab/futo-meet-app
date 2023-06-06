@@ -1,32 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FUTO Meet</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
 </head>
-<body>
-    <div class="hero">
-        <header class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="./assets/img/logo.svg" alt=""><span>FUTO Meet</span></a>
-                <div class="navbar-nav">Don't have an account? <a href="#">Sign up</a></div>
-            </div>
-        </header>
 
-        <div class="hero-body">
-            <div class="img-box"><img src="./assets/img/secure.png" alt=""></div>
-            <h2>Forgot Password?</h2>
-            <div class="hero-detail">enter email address to reset password.</div>
-            <form action="" method="post" class="form-container">
-                <input class="form-control" type="email" name="email" id="" placeholder="E-mail">
-                <input class="form-btn" type="submit" value="Submit">
-            </form>
+<body>
+    <div class="main">
+        <div class="container">
+            <header class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img src="./assets/img/logo.svg" alt=""><span>FUTO
+                            Meet</span></a>
+                            
+                    <ul class="navbar-nav mx-auto">
+                        <li class="navbar-item"><a href="#" class="active">Home</a></li>
+                        <li class="navbar-item"><a href="#">Services</a></li>
+                        <li class="navbar-item"><a href="#">Resources</a></li>
+                    </ul>
+                    <div class="navbar-nav">
+                        <a href="#" class="fm-btn">Sign up</a>
+                        <a href="#" class="fm-btn light">Log in</a>
+                    </div>
+                </div>
+            </header>
+            <div class="main-body">
+                <div class="container">
+                    <div class="body-intro">
+                        <div class="text-center">
+                            <h1>Organize HD video meetings</h1>
+                            <p style="width:55%; margin: 2rem auto;">FUTO meet has been designed to hold powerful high definition video calls across any device to help users interact amd engage with each other.</p>
+                            <div class="key-section">
+                                <p>Input meeting key</p>
+                                <input class="form-control" type="text" name="key" placeholder="XXX-XXXX-XXX" disabled>
+                                <p>This is the hint text to help user.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-preview">
+                        <img src="./assets/img/image06.png" alt="#">
+                        <div class="preview-body">
+                            <div class="display-2">Host or join meetings.</div>
+                            <div class="preview-btn">
+                                <a href="#" class="fm-btn">Host a meeting</a>
+                                <a href="#" class="fm-btn dark">Join meeting</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
         </div>
 
     </div>
-    
+    <div class="feature">
+        <div class="container">
+            <div class="row heading text-center">
+                <h4>features</h4>
+                <div class="mb-3 mt-1">
+                    <div class="display-6">Video calling like never before</div>
+                    FUTO meet has been designed to hold powerful high definition video calls across any device to help users interact and engage with each other.
+                </div>
+            </div>
+            <div class="container mb-2">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="section-tab">
+                            <i class="far fa-mail-bulk"></i>
+                            <h5>Create and join meetings easily</h5>
+                            <p>FUTO meet has been designed to hold powerful high definition video calls across any device to help users interact and
+                            engage with each other.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="section-tab">
+                            <i class="far fa-mail-bulk"></i>
+                            <h5>Instant messaging</h5>
+                            <p>FUTO meet has been designed to hold powerful high definition video calls across any device to help users interact
+                                and
+                                engage with each other.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="section-tab">
+                            <i class="far fa-mail-bulk"></i>
+                            <h5>High quality video and audio</h5>
+                            <p>FUTO meet has been designed to hold powerful high definition video calls across any device to help users interact
+                                and
+                                engage with each other.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="feature-more" href="#">Learn more <i class="far fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row heading">
+                <h1>How to use</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="how-to-use">
+                        <img src="./assets/img/secure.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="how-to-use">
+                        You can simply create a meeting and invite others or you can join a meeting by entering the required meeting key or through a link shared via social networks.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="faq">
+        <div class="container">
+            <div class="heading">
+                <h1>Frequently asked questions</h1>
+                <p>everything you need to know about futo team</p>
+            </div>
+            <div class="accordion" id="faqSection">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqItem-One">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="faqItem-collapseOne">
+                            Where do I get a meeting key?
+                        </button>
+                    </h2>
+                    <div id="faqItem-collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="faqItem-One">
+                        <div class="accordion-body">
+                            FUTO meet has been designed to hold powerful high definition video calls across any device to help users interact and
+                            engage with each other.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqItem-Two">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqItem-collapseTwo" aria-expanded="false"
+                            aria-controls="faqItem-collapseTwo">
+                            Where do I get a meeting key?
+                        </button>
+                    </h2>
+                    <div id="faqItem-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="faqItem-Two">
+                        <div class="accordion-body">
+                            FUTO meet has been designed to hold powerful high definition video calls across any device to help users interact and
+                            engage with each other.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqItem-Three">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqItem-collapseThree" aria-expanded="false"
+                            aria-controls="faqItem-collapseThree">
+                            Where do I get a meeting key?
+                        </button>
+                    </h2>
+                    <div id="faqItem-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="faqItem-Three">
+                        <div class="accordion-body">
+                            FUTO meet has been designed to hold powerful high definition video calls across any device to help users interact and
+                            engage with each other.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-mini">
+        <div class="container">
+            <div class="group-img">
+                <img src="./assets/img/image01.png" alt="">
+                <img src="./assets/img/image02.png" alt="">
+                <img src="./assets/img/image03.png" alt="">
+            </div>
+            <div class="heading">
+                <h4>Still have questions?</h4>
+                <p>Can't find the answer you're looking for? Please chat with our friendly team.</p>
+            </div>
+            <a href="#" class="fm-btn">Get in touch</a>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="row">
+            <div class="footer-option">
+                <div class="col-lg-2 col-md-6">
+                    <ul class="footer-list">
+                        <div class="footer-list-header">Product</div>
+                        <li class="footer-item"><a href="#">Overview</a></li>
+                        <li class="footer-item"><a href="#">Features</a></li>
+                        <li class="footer-item"><a href="#">Solutions <span>New</span></a></li>
+                        <li class="footer-item"><a href="#">Tutorials</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <ul class="footer-list">
+                        <div class="footer-list-header">Company</div>
+                        <li class="footer-item"><a href="#">About Us</a></li>
+                        <li class="footer-item"><a href="#">Careers</a></li>
+                        <li class="footer-item"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <ul class="footer-list">
+                        <div class="footer-list-header">Resources</div>
+                        <li class="footer-item"><a href="#">Blog</a></li>
+                        <li class="footer-item"><a href="#">Newsletter</a></li>
+                        <li class="footer-item"><a href="#">Events</a></li>
+                        <li class="footer-item"><a href="#">Help Centre</a></li>
+                        <li class="footer-item"><a href="#">Tutorials</a></li>
+                        <li class="footer-item"><a href="#">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <ul class="footer-list">
+                        <div class="footer-list-header">Live Cases</div>
+                        <li class="footer-item"><a href="#">Startups</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <ul class="footer-list">
+                        <div class="footer-list-header">Social</div>
+                        <li class="footer-item"><a href="#">Twitter</a></li>
+                        <li class="footer-item"><a href="#">LinkedIn</a></li>
+                        <li class="footer-item"><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <ul class="footer-list">
+                                                <div class="footer-list-header">Legal</div>
+                        <li class="footer-item"><a href="#">Terms</a></li>
+                        <li class="footer-item"><a href="#">Privacy</a></li>
+                        <li class="footer-item"><a href="#">Cookies</a></li>
+                        <li class="footer-item"><a href="#">Licenses</a></li>
+                        <li class="footer-item"><a href="#">Settings</a></li>
+                        <li class="footer-item"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="footer-credit">
+            <a class="footer-brand" href="#"><img src="./assets/img/logo.svg" alt=""><span>FUTO Meet</span></a>
+                <p>
+                    &copy; Copyright <span id="dateyear">2023</span> <a href="#" >FUTO Meet</a> | All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/bootstrap.min.js"></script>
 </body>
+
 </html>

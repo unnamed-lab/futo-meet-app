@@ -4,46 +4,7 @@
 .hero {
     position: relative;
     font-family: "Poppins", "san-serif";
-    .navbar {
-        margin-bottom: 1rem;
-
-        &-brand {
-            text-decoration: none;
-
-            span {
-                padding: 0 16px;
-                font-size: 20px;
-                font-weight: 600;
-            }
-            img {
-                width: 3rem;
-            }
-        }
-
-        &-nav {
-            font-size: 18px;
-            font-weight: 400;
-
-            @include media-breakpoint-down(lg) {
-                font-size: 15px;
-            }
-
-            a {
-                padding: 0 6px;
-                text-decoration: none;
-                color: $black;
-                font-weight: 600; 
-                @include media-breakpoint-down(lg) {
-                    padding: 0;
-                }
-
-                &:hover {
-                    color: $primary;
-                    transition: all .5s ease-in-out;
-                }
-            }
-        }
-    }
+    margin-top: .5rem;
 
     &-body {
         display: flex;
@@ -86,33 +47,33 @@
             }
         }
 
-        .form-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            margin-top: 1rem;
-            width: 25%;
-            @include media-breakpoint-down(lg) {
-                width: 70%;
-            }
+        // .form-container {
+        //     display: flex;
+        //     flex-wrap: wrap;
+        //     justify-content: center;
+        //     align-items: center;
+        //     margin-top: 1rem;
+        //     width: 25%;
+        //     @include media-breakpoint-down(lg) {
+        //         width: 70%;
+        //     }
 
-            .form-control {
-                border: none;
-                border-bottom: 2px solid $gray-500;
-                margin-top: .25rem;
-                margin-bottom: 2rem;
+        //     .form-control {
+        //         border: none;
+        //         border-bottom: 2px solid $gray-500;
+        //         margin-top: .25rem;
+        //         margin-bottom: 2rem;
 
-                &.top {
-                    margin-bottom: 2.15rem !important;
-                }
+        //         &.top {
+        //             margin-bottom: 2.15rem !important;
+        //         }
 
-                &:hover {
-                    border-bottom: 2px solid $primary;
-                }
-            }
+        //         &:hover {
+        //             border-bottom: 2px solid $primary;
+        //         }
+        //     }
 
-        }
+        // }
 
     }
 }
